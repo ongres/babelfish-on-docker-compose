@@ -1,4 +1,3 @@
-version: "3"
 
 services:
   babelfishpg-4.1.1-ubuntu-focal:
