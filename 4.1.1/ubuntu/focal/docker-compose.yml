@@ -1,12 +1,12 @@
 
 services:
-  babelfishpg-{{ BABELFISH_VERSION }}-{{DISTRO}}-{{OSVERSION}}:
-    container_name: babelfishpg-{{ BABELFISH_VERSION }}-{{ DISTRO }}.{{ OSVERSION }}
-    image: babelfishpg:{{ BABELFISH_VERSION }}-{{ DISTRO }}.{{ OSVERSION}}
+  babelfishpg-4.1.1-ubuntu-focal:
+    container_name: babelfishpg-4.1.1-ubuntu.focal
+    image: babelfishpg:4.1.1-ubuntu.focal
     ports:
       # Port forwarding not supported by BabelfishPG
       - 1433:1433
-      - 15432:5432
+      - 5432:15432
     environment:
       - POSTGRES_PASSWORD=password
       - POSTGRES_DB=postgres
